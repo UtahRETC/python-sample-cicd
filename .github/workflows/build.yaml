@@ -1,0 +1,18 @@
+name: Build
+
+on: [push]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v1
+        with:
+          python-version: 3.11
+
+      - run: pip install pipenv
+      - run: pipenv install --dev
+
+      - run: pipenv run black src tests --check
+      - run: pipenv run pytest
