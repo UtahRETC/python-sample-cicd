@@ -8,7 +8,6 @@ flask = "*"
 
 [dev-packages]
 pytest = "*"
-autoflake = "*"
 black = "*"
 
 [requires]
