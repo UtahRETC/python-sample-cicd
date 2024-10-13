@@ -5,9 +5,11 @@ name = "pypi"
 
 [packages]
 flask = "*"
-pytest = "*"
 
 [dev-packages]
+pytest = "*"
+autoflake = "*"
+black = "*"
 
 [requires]
 python_version = "3.11"
