@@ -3,6 +3,12 @@
 This is an example Flask application with automated tests, linters, and
 deployments.
 
+## Running locally
+
+You will need Pipenv to run this application locally. Refer to
+https://pipenv.pypa.io/en/latest/installation.html for instructions on how to
+install Pipenv.
+
 ## Useful commands
 
 - `./scripts/install`, install dependencies
