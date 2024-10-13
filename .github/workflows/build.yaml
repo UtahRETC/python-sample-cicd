@@ -12,7 +12,6 @@ jobs:
           python-version: 3.11
 
       - run: pip install pipenv
-      - run: pipenv install --dev
-
-      - run: pipenv run black src tests --check
-      - run: pipenv run pytest
+      - run: ./scripts/install
+      - run: ./scripts/lint --check
+      - run: ./scripts/test
